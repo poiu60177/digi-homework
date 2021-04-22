@@ -1,0 +1,116 @@
+nav{
+    
+    position: relative;
+    transition: 1s;
+}
+.my-nav{
+    width: 100%;
+    
+    padding: 0;
+}
+.my-nav-btn{
+    padding: 8px 16px;
+    margin-right: 16px ;
+    font-weight: 600;
+    font-size: .875rem;
+    line-height: 1.25rem;
+
+}
+.my-logo-container{
+    height: 92px;
+    padding: 16px;
+}
+nav img{
+    height: 100%;
+}
+.nav-link{
+    padding: 0;
+}
+.my-nav-container{
+    max-width: 1280px;
+    padding: 0 32px;
+height: 100%;
+}
+
+#carouselIndicators.my-height{
+    height: calc(100vh - 92px);
+}
+.carousel-inner.my-height{
+    height: 100%;
+}
+
+.my-img-container{
+    height: 100%;
+    width: 100%;
+}
+.carousel-item.my-height{
+    height: 100%;
+}
+#car-pic1{
+    background-image: url(../img/bgc.jpg);
+}
+#car-pic2{
+    background-image: url(../img/bgc2.jpg);
+}
+#car-pic3{
+    background-image: url(../img/bgc3.jpg);
+}
+.section1 .container.my-padding{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+@media (max-width:768px){
+    .my-nav-container {
+        
+        padding: 0 16px;
+    }
+    .navbar-nav{
+        position:relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 8px 16px;
+        z-index: 50;
+    }
+    #navbarNavDropdown.my-padding{
+        padding-top: 77px;
+        
+    }
+    .my-logo-container{
+        height: 77px;
+       
+    }
+    .navbar-toggler.my-orderreset{
+        order: 100;
+        height: 77px;
+        position: relative;
+        top: 0%;
+        border: none;
+        
+       
+    }
+    .my-nav-btn{
+        width: 100%;
+        padding: none;
+        margin: 8px 0 0;
+    }
+    #carouselIndicators.my-height{
+        height: 70vw;
+    }
+}
+@media (max-width: 575px){
+    .my-logo-container{
+        height: 62px;
+       
+    }
+    #navbarNavDropdown.my-padding{
+        padding-top: 62px;
+    }
+    .navbar-toggler.my-orderreset{
+        
+        height: 62px;
+       
+    }
+}
