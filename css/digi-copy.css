@@ -4,7 +4,10 @@
 nav{
     
     position: relative;
-    transition: 1s;
+    
+}
+.my-clear-float{
+    clear: both;
 }
 .my-nav{
     width: 100%;
@@ -22,6 +25,7 @@ nav{
 .my-logo-container{
     height: 92px;
     padding: 16px;
+    float: left;
 }
 nav img{
     height: 100%;
@@ -32,9 +36,11 @@ nav img{
 .my-nav-container{
     max-width: 1280px;
     padding: 0 32px;
-height: 100%;
-}
 
+}
+.navbar-collapse.my-height{
+    height: 92px;
+}
 #carouselIndicators.my-height{
     height: calc(100vh - 92px);
 }
@@ -72,31 +78,32 @@ height: 100%;
     .navbar-nav{
         position:relative;
         top: 0;
-        left: 0;
-        width: 100%;
-        padding: 8px 16px;
+
+        left: -24px;
+        width: 100vw;
+        padding: 0 16px;
         z-index: 50;
     }
-    #navbarNavDropdown.my-padding{
-        padding-top: 77px;
-        
+    .navbar-collapse.my-height{
+        height:fit-content;
     }
     .my-logo-container{
         height: 77px;
        
     }
     .navbar-toggler.my-orderreset{
-        order: 100;
+       
         height: 77px;
-        position: relative;
+        position: absolute;
         top: 0%;
+        right: 0;
         border: none;
         
        
     }
     .my-nav-btn{
         width: 100%;
-        padding: none;
+        padding: 8px 16px;
         margin: 8px 0 0;
     }
     #carouselIndicators.my-height{
@@ -108,9 +115,7 @@ height: 100%;
         height: 62px;
        
     }
-    #navbarNavDropdown.my-padding{
-        padding-top: 62px;
-    }
+   
     .navbar-toggler.my-orderreset{
         
         height: 62px;
