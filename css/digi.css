@@ -1,11 +1,24 @@
+<<<<<<< Updated upstream
 *{
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+=======
+a{
+    color: unset;
+}
+a:hover{
+    color: unset;
+    text-decoration: unset;
+}
+a:visited{
+    color: unset;
+>>>>>>> Stashed changes
 }
 nav{
     
     position: relative;
     transition: 1s;
 }
+
 .my-nav{
     width: 100%;
     
@@ -64,10 +77,129 @@ height: 100%;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
 }
+.my-container {
+    width: 100%;
+    max-width: 1536px;
+}
+.my-mt-4 {
+    margin-top: 4rem;
+}
+.my-mb-5{
+    margin-bottom: 5rem;
+}
+.my-mb-1-25 {
+    margin-bottom: 1.25rem;
+}
+.my-mb-75 {
+    margin-bottom: .75rem;
+}
+.my-mx-05{
+    margin: 0 -.5rem ;
+}
+.my-p-05{
+    padding: .5rem;
+}
+.my-px-2 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.my-px-1-25 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+.my-py-6 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+.my-py-05 {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+.section1 .my-textarea p.my-width{
+    width: 50%;
+}
+.w-10 {
+    width: 2.5rem;
+}
+.w-16 {
+    width: 4rem;
+}
+
+.h-1 {
+    height: .25rem;
+}
+.inline-flex {
+    display: inline-flex;
+}
+.rounded-full {
+    border-radius: 9999px;
+}
+
+.bg-indigo-500 {
+   
+    background-color: rgb(99,102,241);
+}
+.bg-indigo-500:hover {
+    
+    background-color: rgb(79,70,229);}
+
+.text-indigo-500 {
+    color: rgba(99,102,241);}
+.Heading-pic{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+ 
+   
+   background-color: rgb(224,231,255);
+    
+}
+.text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+
+.mt-16 {
+    margin-top: 4rem;
+}
+.section3 .my-textarea p.my-width{
+    width: 66%;
+}
+@media (max-width: 1536px){
+   
+.my-container {
+    max-width: 1280px;
+}
+}
+
+
+@media (max-width:1280px){
+    .section1 .my-textarea p.my-width{
+        width: 75%;
+    }
+    .my-container {
+        max-width: 1024px;
+    }
+}
+@media (max-width: 1024px){
+    .my-container {
+        max-width: 768px;
+    }
+}
+@media (max-width:992px){
+    .section1 .my-textarea p.my-width{
+        width: 100%;
+    }
+}
+
 @media (max-width:768px){
     .my-nav-container {
         
         padding: 0 16px;
+    }
+    .my-container {
+        max-width: 640px;
     }
     .navbar-nav{
         position:relative;
@@ -101,6 +233,11 @@ height: 100%;
     }
     #carouselIndicators.my-height{
         height: 70vw;
+    }
+}
+@media (max-width: 640px){
+    .my-container {
+        max-width: unset;
     }
 }
 @media (max-width: 575px){
