@@ -86,12 +86,12 @@
                             <div class="w-25">
                                 <div class="position-relative mb-2  cart-circle ">
                                     <div
-                                        class="w-10 h-10 mx-auto bg-white rounded-full text-lg d-flex align-items-center text-center">
+                                        class="w-10 h-10 mx-auto bg-green-500 rounded-full text-white text-lg d-flex align-items-center text-center">
                                         <span class="  w-100">
                                             2
                                         </span>
                                         <div class="cart-bar">
-                                            <div class="bg-green-500 my-w-33 h-100"></div>
+                                            <div class="bg-green-500 w-100 h-100 rounded"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -100,11 +100,13 @@
                             <div class="w-25">
                                 <div class="position-relative mb-2  cart-circle ">
                                     <div
-                                        class="w-10 h-10 mx-auto bg-white rounded-full text-lg d-flex align-items-center text-center">
+                                    class="w-10 h-10 mx-auto bg-green-500 rounded-full text-white text-lg d-flex align-items-center text-center">
                                         <span class=" w-100">
                                             3
                                         </span>
-                                        <div class="cart-bar"></div>
+                                        <div class="cart-bar">
+                                            <div class="bg-green-500 w-100 h-100 rounded"></div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="text-center">填寫資料</div>
@@ -116,58 +118,72 @@
                                         <span class=" w-100">
                                             4
                                         </span>
-                                        <div class="cart-bar"></div>
+                                        <div class="cart-bar">
+                                            <div class="bg-green-500 my-w-33 h-100"></div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="text-center">完成訂購</div>
                             </div>
                         </div>
                     </div>
-                    <div class="border-t w-100 my-pt-1-25">
-                        <span class="text-gray-700 text-2xl">訂單明細</span>
-                        <div class="d-flex justify-content-between align-items-center mt-4 pt-4">
-                            <div class="d-flex align-items-center"> <img src="https://i.imgur.com/EEguU02.jpg"
-                                    width="60px" class="rounded-full ">
-                                <div class="d-flex flex-column ml-3"> <span class="">Chicken
-                                        momo</span> <span class="text-xs  text-gray-400">#41551</span> </div>
-                            </div>
-                            <div class="d-flex justify-content-center align-items-center">
-                                <div class="my-px-2 d-flex "> <span class="font-weight-bold">-</span> <input type="text"
-                                        class="focus:outline-none bg-gray-100 border h-6 w-8 rounded text-sm px-2 mx-2"
-                                        value="1"> <span class="font-weight-bold">+</span> </div>
-                                <div class="pr-8 "> <span class="text-xs font-medium">$10.50</span> </div>
-                                <div> <i class="fa fa-close text-xs font-medium"></i> </div>
-                            </div>
+
+                    <form class="w-100 border-t my-py-1-25 ">
+                        <span class="text-gray-700 text-2xl">寄送資料</span>
+                        <div class="mt-2">
+                            <label class="block text-xl px-1 py-1 mb-0 text-gray-00" for="cus_name">姓名</label>
+                            <input
+                                class="w-100 my-px-1-25 py-2 text-gray-700 border-opacity-100 border-2 border-gray-300 bg-transparent rounded"
+                                id="cus_name" name="cus_name" type="text" required="" placeholder="王小明"
+                                aria-label="Name">
                         </div>
-                        <div class="d-flex justify-content-between align-items-center mt-4 pt-4 border-t-2">
-                            <div class="d-flex align-items-center"> <img src="https://i.imgur.com/EEguU02.jpg"
-                                    width="60px" class="rounded-full ">
-                                <div class="d-flex flex-column ml-3"> <span class="">Chicken
-                                        momo</span> <span class="text-xs  text-gray-400">#41551</span> </div>
-                            </div>
-                            <div class="d-flex justify-content-center align-items-center">
-                                <div class="my-px-2 d-flex "> <span class="font-weight-bold">-</span> <input type="text"
-                                        class="focus:outline-none bg-gray-100 border h-6 w-8 rounded text-sm px-2 mx-2"
-                                        value="1"> <span class="font-weight-bold">+</span> </div>
-                                <div class="pr-8 "> <span class="text-xs font-medium">$10.50</span> </div>
-                                <div> <i class="fa fa-close text-xs font-medium"></i> </div>
-                            </div>
+                        <div class="mt-2">
+                            <label class="block text-xl px-1 py-1 mb-0 text-gray-00" for="cus_phone">電話</label>
+                            <input
+                                class="w-100 my-px-1-25 py-2 text-gray-700 border-opacity-100 border-2 border-gray-300 bg-transparent rounded"
+                                id="cus_phone" name="cus_phone" type="text" required="" placeholder="0912345678"
+                                aria-label="Email">
                         </div>
-                        <div class="d-flex justify-content-between align-items-center mt-4 pt-4 border-t-2">
-                            <div class="d-flex align-items-center"> <img src="https://i.imgur.com/EEguU02.jpg"
-                                    width="60px" class="rounded-full ">
-                                <div class="d-flex flex-column ml-3"> <span class="">Chicken
-                                        momo</span> <span class="text-xs  text-gray-400">#41551</span> </div>
-                            </div>
-                            <div class="d-flex justify-content-center align-items-center ">
-                                <div class="my-px-2 d-flex "> <span class="font-weight-bold">-</span> <input type="text"
-                                        class="focus:outline-none bg-gray-100 border h-6 w-8 rounded text-sm px-2 mx-2"
-                                        value="1"> <span class="font-weight-bold">+</span> </div>
-                                <div class="pr-8 "> <span class="text-xs font-medium">$10.50</span> </div>
-                                <div> <i class="fa fa-close text-xs font-medium"></i> </div>
-                            </div>
+                        
+                        <div class="mt-2">
+                            <label class="block text-xl px-1 py-1 mb-0 text-gray-00" for="cus_email">Email</label>
+                            <input
+                                class="w-100 my-px-1-25 py-2 text-gray-700 border-opacity-100 border-2 border-gray-300 bg-transparent rounded"
+                                id="cus_email" name="cus_email" type="email" required="" placeholder="abc123@gmail.com"
+                                aria-label="Email">
                         </div>
-                    </div>
+
+                        <div class="mt-2">
+                            <label class="block text-xl px-1 py-1 mb-0 text-gray-00" for="cus_adress">地址</label>
+                        </div>
+                        <div class=" mt-2 d-flex">
+                            <div class="w-50">
+                                <input
+                                    class="w-100 my-px-1-25 py-2 text-gray-700 border-opacity-100 border-2 border-gray-300 bg-transparent rounded"
+                                    id="cus_adress" name="cus_email" type="text" required="" placeholder="城市"
+                                    aria-label="Email">
+
+                            </div>
+                            <div class="w-50  pl-2">
+                            <input
+                                class="w-100 my-px-1-25 py-2 text-gray-700 border-opacity-100 border-2 border-gray-300 bg-transparent rounded"
+                                id="cus_email" name="cus_adress" type="text" required="" placeholder="郵遞區號"
+                                aria-label="Email"></div>
+                        </div>
+                        <div class="mt-2">
+
+                            <input
+                                class="w-100 my-px-1-25 py-2 text-gray-700 border-opacity-100 border-2 border-gray-300 bg-transparent rounded"
+                                id="cus_adress" name="cus_email" type="text" required="" placeholder="地址"
+                                aria-label="Email">
+                        </div>
+                    </form>
+
+
+
+
+
+
                     <div class="d-flex flex-column align-items-end mt-4 pt-4 border-t-2">
                         <div class="d-flex justify-content-between align-items-center w-25">
                             <span class="text-sm text-gray-400 mr-2 ">數量:</span>
@@ -188,12 +204,13 @@
                     </div>
 
                     <div class="d-flex justify-content-between align-items-center mt-4 pt-4 border-t-2">
-                        <div class="flex items-center "> <i class="fa fa-arrow-left text-sm pr-2"></i>
-                            <a herf="" class="text-md font-medium text-black-400 ">返回購物</a>
-                        </div>
                         <a href="">
-                        <button class="h-12 w-auto px-5
-                        btn-primary rounded  text-white border-0">下一步</button></a>
+                            <button class="h-12 w-auto px-5
+                            btn-primary rounded text-blue-500  bg-transparent "
+                                style="color: rgb(59,130,246);">上一步</button></a>
+                        <a href="">
+                            <button class="h-12 w-auto px-5
+                        btn-primary rounded  text-white border-0">前往付款</button></a>
                     </div>
 
 
