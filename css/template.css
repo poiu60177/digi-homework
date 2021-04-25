@@ -1,3 +1,6 @@
+main{
+    height: 100vh;
+}
 /* 初始化 */
 
 *{
@@ -122,6 +125,14 @@ nav img{
     padding-left: .25rem;
     padding-right: .25rem;
 }
+.my-px-6 {
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+.my-py-1-5 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
 .my-py-6 {
     padding-top: 6rem;
     padding-bottom: 6rem;
@@ -222,6 +233,9 @@ nav img{
 .w-10 {
     width: 2.5rem;
 }
+.h-10 {
+    height: 2.5rem;
+}
 .w-16 {
     width: 4rem;
 }
@@ -251,6 +265,7 @@ nav img{
 /* border */
 .border-2 {
     border-width: 2px;
+    border-style: solid;
 }
 .rounded-full {
     border-radius: 9999px;
@@ -278,6 +293,10 @@ nav img{
     
     border-color: rgb(209,213,219);
 }
+.bg-black {
+  
+    background-color: rgb(0,0,0);
+}
 .bg-indigo-500 {
    
     background-color: rgb(99,102,241);
@@ -288,10 +307,6 @@ nav img{
 .bg-gray-100 {
         
     background-color: rgb(243,244,246);
-}
-.bg-gray-200 {
-    
-    background-color: rgba(229,231,235);
 }
 .bg-gray-300 {
     
@@ -321,8 +336,14 @@ nav img{
 .tracking-widest {
     letter-spacing: .1em;
 }
-
-
+.text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+}
+.text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+}
 .my-font-1-5{
     font-size: 1.5rem;
 }
@@ -346,271 +367,138 @@ nav img{
     font-size: 1.5rem;
     line-height: 2rem;
 }
-/* main 以內內容 */
-#carouselIndicators.my-height{
-    height: calc(100vh - 92px);
-}
-.carousel-inner.my-height{
-    height: 100%;
-}
-
-
-#carouselIndicators.my-height{
-    height: calc(100vh - 92px);
-}
-.carousel-inner.my-height{
-    height: 100%;
-}
-
-.my-img-container{
-    height: 100%;
-    width: 100%;
-}
-.carousel-item.my-height{
-    height: 100%;
-}
-#car-pic1{
-    background-image: url(../img/bgc.jpg);
-}
-#car-pic2{
-    background-image: url(../img/bgc2.jpg);
-}
-#car-pic3{
-    background-image: url(../img/bgc3.jpg);
-}
-
-
-.section1 .my-textarea p.my-width{
-    width: 50%;
-}
-
-.my-position-0{
-    top: 0;
-    left: 0;
-}
-
-
-
-
-.Heading-pic{
-    height: 5rem;
-    width: 5rem;
-    border-radius: 50%;
- 
-   
-   background-color: rgb(224,231,255);
-    
-}
-
-
-.section3 .my-width{
-    width: 66%;
-}
-
-.table th,.table td {
-    padding: .75rem 1rem;
-    vertical-align: top;
-    border-bottom: 1px solid #dee2e6;
-    font-weight:normal;
-}
-
-.section5 .Heading-pic{
-    height: 8rem;
-    width: 8rem;
-    border-radius: 50%;
- 
-   
-   background-color: rgb(224,231,255);
-    
-}
-.section5 svg{
-    height: 4rem;
-}
-.flex-640{
-    display: flex;
-    flex-direction: row;
-    text-align: start;
-    border-bottom: 1px solid #dee2e6;
-}
-.order640-2{
-    order: 2;
-}
-.section6 .my-width{
-    width: 80%;
-}
 
 
 @media (max-width: 1536px){
    
-.my-container {
-    max-width: 1280px;
-}
-}
-
-
-@media (max-width:1280px){
-    .section1 .my-textarea p.my-width{
-        width: 75%;
-    }
     .my-container {
-        max-width: 1024px;
+        max-width: 1280px;
     }
+    }
+    
+    
+@media (max-width:1280px){
+        
+        .my-container {
+            max-width: 1024px;
+        }
 }
 @media (max-width: 1024px){
-    .my-container {
-        max-width: 768px;
-    }
-    .section3 .my-width{
-        width: 100%;
-    }
-    .w-lg-60per{
-        width: 100%;
-    }
-    .section6 .my-width{
-        width: 100%;
-    }
-    
+        .my-container {
+            max-width: 768px;
+        }
+        .section3 .my-width{
+            width: 100%;
+        }
+        .w-lg-60per{
+            width: 100%;
+        }
+        
 }
 @media (max-width:992px){
-    .section1 .my-textarea p.my-width{
-        width: 100%;
-    }
-    .my-h-1024-16{
-        height: 16rem;
-        
-    }
-    .my-p-1024{
-        padding-left:0;
-        padding-right: 0;
-        padding-top: 0;
-        padding-bottom:0;
-        margin-top: 1.5rem;
-    }
+        .section1 .my-textarea p.my-width{
+            width: 100%;
+        }
+        .my-h-1024-16{
+            height: 16rem;
+            
+        }
+        .my-p-1024{
+            padding-left:0;
+            padding-right: 0;
+            padding-top: 0;
+            padding-bottom:0;
+            margin-top: 1.5rem;
+        }
 }
-
+    
 @media (max-width:768px){
-    .my-nav-container {
+        .my-nav-container {
+            
+            padding: 0 16px;
+        }
+        .my-container {
+            max-width: 640px;
+        }
+        .my-pl-md-5{
+            padding-left: 0;
+        }
+        .my-mt-md-25{
+            margin-top: 2.5rem;
+        }
+        .navbar-nav{
+            position:relative;
+            top: 0;
+            transition: unset;
+            left: -24px;
+            width: 100vw;
+            padding: 0 16px;
+            z-index: 50;
+        }
+        .nav-item{
+            transition: unset;
+        }
+        .navbar-collapse.my-height{
+            height:fit-content;
+            padding-bottom:  1rem;
+        }
+        .my-logo-container{
+            height: 77px;
+           float: none;
+        }
+        .navbar-toggler.my-orderreset{
+           
+            height: 77px;
+            position: absolute;
+            top: 0%;
+            right: 0;
+            border: none;
+            
+           
+        }
+        .my-nav-btn{
+            width: 100%;
+            padding: 8px 16px;
+            margin: 8px 0 0;
+            transition: unset;
+        }
+    
+        #nav-icons{
+            justify-content:center;
+        }
+        #nav-icons i{
+            margin: unset;
+            margin-top: .5rem;
+            padding: .5rem .75rem;
+        }
         
-        padding: 0 16px;
-    }
-    .my-container {
-        max-width: 640px;
-    }
-    .my-pl-md-5{
-        padding-left: 0;
-    }
-    .my-mt-md-25{
-        margin-top: 2.5rem;
-    }
-    .navbar-nav{
-        position:relative;
-        top: 0;
-        transition: unset;
-        left: -24px;
-        width: 100vw;
-        padding: 0 16px;
-        z-index: 50;
-    }
-    .nav-item{
-        transition: unset;
-    }
-    .navbar-collapse.my-height{
-        height:fit-content;
-        padding-bottom:  1rem;
-    }
-    .my-logo-container{
-        height: 77px;
-       float: none;
-    }
-    .navbar-toggler.my-orderreset{
-       
-        height: 77px;
-        position: absolute;
-        top: 0%;
-        right: 0;
-        border: none;
+        .my-loginbtn{
         
-       
-    }
-    .my-nav-btn{
-        width: 100%;
-        padding: 8px 16px;
-        margin: 8px 0 0;
-        transition: unset;
-    }
-
-    #nav-icons{
-        justify-content:center;
-    }
-    #nav-icons i{
-        margin: unset;
-        margin-top: .5rem;
-        padding: .5rem .75rem;
-    }
-    .my-loginbtn{
+            width: 100%;
+           
         
-        width: 100%;
-       
-    
-    }
-    
-    
-
-
-
-
-
-
-    #carouselIndicators.my-height{
-        height: 70vw;
-    }
-    
-    
+        }
+        
+        
+        
 }
 @media (max-width: 640px){
-    .my-container {
-        max-width: unset;
-    }
-    .section5 .Heading-pic{
-        height: 5rem;
-        width: 5rem;
-        border-radius: 50%;
-        margin: 0 auto 0;
-     
-       
-       background-color: rgb(224,231,255);
-        
-    }
-    .flex-640{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
+        .my-container {
+            max-width: unset;
+        }
         
         
-    }
-    .section5 svg{
-        height: 2.5rem;
-        width: 2.5rem;
-    }
-    .my-mt-640-15{
-        margin-top: 1.5rem;
-    }
-    .order640-2{
-        order: unset;
-    }
-    
 }
 @media (max-width: 575px){
-    .my-logo-container{
-        height: 62px;
+        .my-logo-container{
+            height: 62px;
+           
+        }
        
-    }
-   
-    .navbar-toggler.my-orderreset{
-        
-        height: 62px;
+        .navbar-toggler.my-orderreset{
+            
+            height: 62px;
+           
+        }
        
-    }
-   
 }

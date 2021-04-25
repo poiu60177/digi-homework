@@ -1,0 +1,42 @@
+#section1{
+    min-height: 100vh;
+}
+.login-left-area{
+    width: 50%;
+}
+.login-digi-logo {
+    height: 4rem;
+}
+.login-right-area{
+    width: 50%;
+    padding: 0 4rem;
+    background-color: #162446;
+}
+.login-input-area{
+    width: 66.66666667%;
+}
+#login-right-area-social-media{
+    display: none;
+}
+@media (max-width:992px){
+    .login-left-area{
+display: none;    }
+.login-right-area{
+    width: 100%;
+    padding: 0 4rem;
+    background-color: unset;
+}
+#login-right-area-social-media{
+    display: flex;
+}
+}
+@media (max-width:640px){
+    .login-input-area{
+        width: 100%;
+    }
+}
+.login-right-area{
+   
+    padding: 0 ;
+    
+}
