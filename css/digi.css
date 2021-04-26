@@ -564,7 +564,13 @@ nav img{
     #carouselIndicators.my-height{
         height: 70vw;
     }
-    
+    .my-title-h2{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .my-p-md-025{
+        padding: 0.25rem;
+    }
     
 }
 @media (max-width: 640px){
