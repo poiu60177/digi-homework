@@ -518,7 +518,10 @@ nav img{
         
         }
         
-        
+        .text-md-xs{
+            font-size: .75rem;
+            line-height: 1rem;
+        }
         
 }
 @media (max-width: 640px){
