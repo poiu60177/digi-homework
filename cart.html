@@ -50,7 +50,8 @@
                     <label for="login-dropdown"><i class="my-px-025 my-py-05 my-ml-1 fas fa-user-circle"
                             style="font-size: 1.875rem;line-height: 2rem;"></i></label>
                     <div class="my-loginbtn px-2 py-2 bg-white rounded">
-                        <a href="./login.html"><button type="button" class=" my-nav-btn m-0 w-100 text-left btn">Login</button></a>
+                        <a href="./login.html"><button type="button"
+                                class=" my-nav-btn m-0 w-100 text-left btn">Login</button></a>
                     </div>
 
 
@@ -125,65 +126,25 @@
                     </div>
                     <div class="border-t w-100 my-pt-1-25">
                         <span class="text-gray-700 text-2xl">訂單明細</span>
-                        <div class="d-flex justify-content-between align-items-center mt-4 pt-4">
-                            <div class="d-flex align-items-center"> <img src="https://i.imgur.com/EEguU02.jpg"
-                                    width="60px" class="rounded-full ">
-                                <div class="d-flex flex-column ml-3"> <span class="">Chicken
-                                        momo</span> <span class="text-xs  text-gray-400">#41551</span> </div>
-                            </div>
-                            <div class="d-flex justify-content-center align-items-center">
-                                <div class="my-px-2 d-flex "> <span class="font-weight-bold">-</span> <input type="text"
-                                        class="focus:outline-none bg-gray-100 border h-6 w-8 rounded text-sm px-2 mx-2"
-                                        value="1"> <span class="font-weight-bold">+</span> </div>
-                                <div class="pr-8 "> <span class="text-xs font-medium">$10.50</span> </div>
-                                <div> <i class="fa fa-close text-xs font-medium"></i> </div>
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center mt-4 pt-4 border-t-2">
-                            <div class="d-flex align-items-center"> <img src="https://i.imgur.com/EEguU02.jpg"
-                                    width="60px" class="rounded-full ">
-                                <div class="d-flex flex-column ml-3"> <span class="">Chicken
-                                        momo</span> <span class="text-xs  text-gray-400">#41551</span> </div>
-                            </div>
-                            <div class="d-flex justify-content-center align-items-center">
-                                <div class="my-px-2 d-flex "> <span class="font-weight-bold">-</span> <input type="text"
-                                        class="focus:outline-none bg-gray-100 border h-6 w-8 rounded text-sm px-2 mx-2"
-                                        value="1"> <span class="font-weight-bold">+</span> </div>
-                                <div class="pr-8 "> <span class="text-xs font-medium">$10.50</span> </div>
-                                <div> <i class="fa fa-close text-xs font-medium"></i> </div>
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center mt-4 pt-4 border-t-2">
-                            <div class="d-flex align-items-center"> <img src="https://i.imgur.com/EEguU02.jpg"
-                                    width="60px" class="rounded-full ">
-                                <div class="d-flex flex-column ml-3"> <span class="">Chicken
-                                        momo</span> <span class="text-xs  text-gray-400">#41551</span> </div>
-                            </div>
-                            <div class="d-flex justify-content-center align-items-center ">
-                                <div class="my-px-2 d-flex "> <span class="font-weight-bold">-</span> <input type="text"
-                                        class="focus:outline-none bg-gray-100 border h-6 w-8 rounded text-sm px-2 mx-2"
-                                        value="1"> <span class="font-weight-bold">+</span> </div>
-                                <div class="pr-8 "> <span class="text-xs font-medium">$10.50</span> </div>
-                                <div> <i class="fa fa-close text-xs font-medium"></i> </div>
-                            </div>
-                        </div>
+                        <div id="details"></div>
+
                     </div>
                     <div class="d-flex flex-column align-items-end mt-4 pt-4 border-t-2">
                         <div class="d-flex justify-content-between align-items-center w-25">
                             <span class="text-sm text-gray-400 mr-2 ">數量:</span>
-                            <span class="text-lg font-weight-bold text-gray-800 ">3</span>
+                            <span class="text-lg font-weight-bold text-gray-800" id="total-number">3</span>
                         </div>
                         <div class="d-flex justify-content-between align-items-center w-25">
                             <span class="text-sm text-gray-400 mr-2 ">小計:</span>
-                            <span class="text-lg font-weight-bold text-gray-800 "> $24.90</span>
+                            <span id="product-price" class="text-lg font-weight-bold text-gray-800 "> $24.90</span>
                         </div>
                         <div class="d-flex justify-content-between align-items-center w-25">
                             <span class="text-sm text-gray-400 mr-2 ">運費:</span>
-                            <span class="text-lg font-weight-bold text-gray-800 "> $24.90</span>
+                            <span id="traffic-fee" class="text-lg font-weight-bold text-gray-800 "> $24.9</span>
                         </div>
                         <div class="d-flex justify-content-between align-items-center w-25">
                             <span class="text-sm text-gray-400 mr-2 ">總計:</span>
-                            <span class="text-lg font-weight-bold text-gray-800 "> $24.90</span>
+                            <span id="total-cost" class="text-lg font-weight-bold text-gray-800 "> $24.90</span>
                         </div>
                     </div>
 
@@ -192,7 +153,7 @@
                             <a herf="" class="text-md font-medium text-black-400 ">返回購物</a>
                         </div>
                         <a href="./cart-2.html">
-                        <button class="h-12 w-auto px-5
+                            <button class="h-12 w-auto px-5
                         btn-primary rounded  text-white border-0">下一步</button></a>
                     </div>
 
@@ -370,5 +331,135 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
     integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
     crossorigin="anonymous"></script>
+<script>
+
+
+    const item_list = [
+        {
+            name: 'Chicken momo',
+            item_id: '41551',
+            image: 'https://i.imgur.com/EEguU02.jpg',
+            item_cost: '10.5'
+
+        },
+        {
+            name: 'Spicy Mexican potatoes',
+            item_id: '41551',
+            image: 'https://i.imgur.com/Uv2Yqzo.jpg',
+            item_cost: '10.5'
+
+        }, {
+            name: 'Breakfast',
+            item_id: '41551',
+            image: 'https://i.imgur.com/xbTAITF.jpg',
+            item_cost: '10.5'
+
+        }
+
+    ]
+
+    item_list.forEach(items => {
+        details.innerHTML += `<div class="d-flex justify-content-between align-items-center mt-4 pt-4">
+                            <div class="d-flex align-items-center"> <img src="${items.image}"
+                                    width="60px" class="rounded-full ">
+                                <div class="d-flex flex-column ml-3"> <span class="">${items.name}</span> <span class="text-xs  text-gray-400">#${items.item_id}</span> </div>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="my-px-2 d-flex "> <button class="minus"
+                                        style="border: none;background-color: transparent;width: unset;padding: unset;"><span
+                                            class="font-weight-bold">-</span> </button> <input type="text"
+                                        class="number_count focus:outline-none bg-gray-100 border h-6 w-8 rounded text-sm px-2 mx-2"><button
+                                        class="plus"
+                                        style="border: none;background-color: transparent;width: unset;padding: unset;"><span
+                                            class="font-weight-bold">+</span> </button> </div>
+                                <div class="pr-8 "> <span class="item-cost text-xs font-medium">$${items.item_cost}</span> </div>
+                                <div> <i class="fa fa-close text-xs font-medium"></i> </div>
+                            </div>
+                        </div>`
+    })
+    const plus_btns = document.querySelectorAll('.plus')
+    const minus_btns = document.querySelectorAll('.minus')
+    const number_count = document.querySelectorAll('.number_count')
+    const total_number = document.querySelector('#total-number')
+    const product_price = document.querySelector('#product-price')
+    const traffic_fee = document.querySelector('#traffic-fee')
+    const total_cost = document.querySelector('#total-cost')
+
+    const traffic_cost = 24.9
+    traffic_fee.innerHTML = '$' + traffic_cost
+
+
+    function ItemNumber() {
+        number_count.forEach(element => {
+            element.value = 1;
+        }
+        );
+    }
+    ItemNumber()
+    sumUp()
+    ItemCosts()
+
+
+    for (let i = 0; i < plus_btns.length; i++) {
+        plus_btns[i].onclick = function () {
+
+            number_count[i].value = parseInt(number_count[i].value) + 1
+            console.log(number_count[i].value);
+            sumUp()
+            ItemCosts()
+        }
+
+    }
+    for (let i = 0; i < minus_btns.length; i++) {
+        minus_btns[i].onclick = function () {
+            console.log(number_count[i].value);
+            if (number_count[i].value <= 0) {
+                return
+            }
+            else {
+                number_count[i].value = parseInt(number_count[i].value) - 1
+                sumUp()
+                ItemCosts()
+            }
+        }
+
+    }
+
+    function sumUp() {
+        let sum = 0;
+        for (let i = 0; i < number_count.length; i++) {
+
+            sum += parseInt(number_count[i].value);
+
+            total_number.innerHTML = sum
+        } return sum;
+
+    }
+    function ItemCosts() {
+        let price_sum = 0;
+
+        for (let x = 0; x < item_list.length; x++) {
+
+            price_sum += (item_list[x].item_cost * parseInt(number_count[x].value))
+            product_price.innerHTML = '$' + price_sum
+            let total = 0
+            total = price_sum + 24.9
+            total_cost.innerHTML = '$' + total
+        } return price_sum;
+
+    }
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
 
 </html>
