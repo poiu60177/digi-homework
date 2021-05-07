@@ -1,7 +1,8 @@
 /* 初始化 */
 
 *{
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";}
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    transition: .3s;}
 
 a{
     color: unset;
@@ -16,6 +17,13 @@ a:hover{
 a:visited{
     color: unset;
 }
+img {
+    display: block;
+    object-position: center;
+    object-fit: cover;
+
+}
+
 nav{
     
     position: relative;
@@ -347,36 +355,38 @@ nav img{
     line-height: 2rem;
 }
 /* main 以內內容 */
-#carouselIndicators.my-height{
-    height: calc(100vh - 92px);
-}
-.carousel-inner.my-height{
-    height: 100%;
-}
-
-
-#carouselIndicators.my-height{
-    height: calc(100vh - 92px);
-}
-.carousel-inner.my-height{
-    height: 100%;
-}
-
-.my-img-container{
-    height: 100%;
+/*swiper*/
+.swiper-container {
     width: 100%;
+    height: calc(100vh - 92px);
+    ;
 }
-.carousel-item.my-height{
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
     height: 100%;
-}
-#car-pic1{
-    background-image: url(../img/bgc.jpg);
-}
-#car-pic2{
-    background-image: url(../img/bgc2.jpg);
-}
-#car-pic3{
-    background-image: url(../img/bgc3.jpg);
+    object-fit: cover;
 }
 
 
@@ -554,16 +564,16 @@ nav img{
     
     }
     
-    
+  
 
 
-
-
-
-
-    #carouselIndicators.my-height{
+    .swiper-container{
         height: 70vw;
     }
+
+
+
+    
     .my-title-h2{
         font-size: 1.5rem;
         line-height: 2rem;
