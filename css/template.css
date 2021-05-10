@@ -496,14 +496,18 @@ nav img{
            float: none;
         }
         .navbar-toggler.my-orderreset{
-           
+            color:rgb(55, 65, 81);
+
             height: 77px;
             position: absolute;
             top: 0%;
-            right: 0;
+            right: 16px;
             border: none;
             
            
+        }
+        .navbar-toggler.my-orderreset:focus{
+            outline:none;
         }
         .my-nav-btn{
             width: 100%;
