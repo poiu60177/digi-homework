@@ -92,7 +92,9 @@
                                             2
                                         </span>
                                         <div class="cart-bar">
-                                            <div class="bg-green-500 my-w-33 h-100"></div>
+                                            <div class="bg-green-500 my-w-33 h-100"
+                                                style="border-bottom-left-radius: .25rem;border-top-left-radius: .25rem;">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -150,10 +152,10 @@
 
                     <div class="d-flex justify-content-between align-items-center mt-4 pt-4 border-t-2">
                         <div class="flex items-center "> <i class="fa fa-arrow-left text-sm pr-2"></i>
-                            <a herf="" class="text-md font-medium text-black-400 ">返回購物</a>
+                            <a herf="" class="text-md font-medium text-black-400 "><span>返回購物</span></a>
                         </div>
                         <a href="./cart-2.html">
-                            <button class="h-12 w-auto px-5
+                            <button id="next-btn" class="h-12 w-auto px-5
                         btn-primary rounded  text-white border-0">下一步</button></a>
                     </div>
 
@@ -367,7 +369,7 @@
                             <div class="d-flex justify-content-center align-items-center">
                                 <div class="my-px-2 d-flex "> <button class="minus"
                                         style="border: none;background-color: transparent;width: unset;padding: unset;"><span
-                                            class="font-weight-bold">-</span> </button> <input type="text"
+                                            class="font-weight-bold">-</span> </button> <input type="number"
                                         class="number_count focus:outline-none bg-gray-100 border h-6 w-8 rounded text-sm px-2 mx-2"><button
                                         class="plus"
                                         style="border: none;background-color: transparent;width: unset;padding: unset;"><span
@@ -397,7 +399,7 @@
     }
     ItemNumber()
     sumUp()
-    ItemCosts()
+
 
 
     for (let i = 0; i < plus_btns.length; i++) {
@@ -406,7 +408,7 @@
             number_count[i].value = parseInt(number_count[i].value) + 1
             console.log(number_count[i].value);
             sumUp()
-            ItemCosts()
+
         }
 
     }
@@ -419,7 +421,7 @@
             else {
                 number_count[i].value = parseInt(number_count[i].value) - 1
                 sumUp()
-                ItemCosts()
+
             }
         }
 
@@ -428,14 +430,17 @@
     function sumUp() {
         let sum = 0;
         for (let i = 0; i < number_count.length; i++) {
+            if (parseInt(number_count[i].value) < 0 || number_count[i].value == '' || number_count[i].value.includes('.')) {
 
+                number_count[i].value = 0
+                sumUp
+
+
+            }
             sum += parseInt(number_count[i].value);
 
             total_number.innerHTML = sum
-        } return sum;
-
-    }
-    function ItemCosts() {
+        }
         let price_sum = 0;
 
         for (let x = 0; x < item_list.length; x++) {
@@ -445,12 +450,18 @@
             let total = 0
             total = price_sum + 24.9
             total_cost.innerHTML = '$' + total
-        } return price_sum;
+        }
 
     }
 
+    number_count.forEach(element => element.addEventListener('keyup', sumUp));
 
 
+
+    // const next_btn = document.querySelector('#next-btn')
+    // next_btn.onclick = function () {
+
+    // }
 
 
 
