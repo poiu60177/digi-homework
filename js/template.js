@@ -1,6 +1,6 @@
 const menu_btn = document.querySelector('.navbar-toggler.my-orderreset')
 const menu = document.querySelector('.navbar-collapse')
-menu.classList.remove('show')
+
 toggleBtn()
 function toggleBtn() {
 
