@@ -378,7 +378,7 @@
                                         class="plus"
                                         style="border: none;background-color: transparent;width: unset;padding: unset;"><span
                                             class="font-weight-bold">+</span> </button> </div>
-                                <div class="pr-8 " style="min-width:2rem;"> <span class="item-cost text-xs font-medium" >$${items.item_cost}</span> </div>
+                                <div class="pr-8 " style="min-width:3rem;"> <span class="item-cost text-xs font-medium" >$ ${items.item_cost}</span> </div>
                                 <div> <i class="fa fa-close text-xs font-medium"></i> </div>
                             </div>
                         </div>`
@@ -393,7 +393,7 @@
     const total_cost = document.querySelector('#total-cost')
 
     const traffic_cost = 24.9
-    traffic_fee.innerHTML = '$' + traffic_cost
+    traffic_fee.innerHTML = '$ ' + traffic_cost
 
 
     function ItemNumber() {
@@ -414,7 +414,7 @@
             console.log(number_count[i].value);
 
             sumUp()
-            items_cost[i].innerHTML = '$' + item_list[i].item_cost * parseInt(number_count[i].value);
+            items_cost[i].innerHTML = '$ ' + item_list[i].item_cost * parseInt(number_count[i].value);
         }
 
     }
@@ -427,7 +427,7 @@
             else {
                 number_count[i].value = parseInt(number_count[i].value) - 1
                 sumUp()
-                items_cost[i].innerHTML = '$' + item_list[i].item_cost * parseInt(number_count[i].value);
+                items_cost[i].innerHTML = '$ ' + item_list[i].item_cost * parseInt(number_count[i].value);
             }
         }
 
@@ -455,10 +455,10 @@
         for (let x = 0; x < item_list.length; x++) {
 
             price_sum += (item_list[x].item_cost * parseInt(number_count[x].value))
-            product_price.innerHTML = '$' + price_sum
+            product_price.innerHTML = '$ ' + price_sum
             let total = 0
             total = price_sum + 24.9
-            total_cost.innerHTML = '$' + total
+            total_cost.innerHTML = '$ ' + total
         }
 
     }
