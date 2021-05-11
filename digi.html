@@ -8,12 +8,12 @@
   <title>Document</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-   
- 
+
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
 
- <link rel="stylesheet" href="./css/digi.css">
+  <link rel="stylesheet" href="./css/digi.css">
 
 </head>
 
@@ -24,14 +24,17 @@
         <img src="./img/download.svg" alt="">
       </div>
       <button class="navbar-toggler my-orderreset" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style="padding: 1rem;">
+
+        <i class="fas fa-bars"></i>
+
 
       </button>
 
       <div data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
-        class="navbar-collapse my-padding my-height justify-content-end" id="navbarNavDropdown"  style="transition: none;">
-        <ul class="navbar-nav  ">
+        class="navbar-collapse my-padding my-height justify-content-end" id="navbarNavDropdown"
+        style="transition: none;">
+        <ul class="navbar-nav">
           <li class="nav-item active">
             <a href=""><button type="button" class=" my-nav-btn btn ">Blog</button></a>
           </li>
@@ -45,14 +48,15 @@
             <a href=""><button type="button" class=" my-nav-btn btn ">Contact</button></a>
           </li>
         </ul>
-        <div id="nav-icons" class="d-flex position-relative" >
+        <div id="nav-icons" class="d-flex position-relative">
           <a href="./cart.html"> <i class="my-font-1-5 my-py-05 my-ml-1 fas fa-shopping-cart my-px-025"
               style="line-height: 2rem;"></i></a>
           <input type="checkbox" id="login-dropdown" style="display: none;">
-          <label for="login-dropdown"><i class="my-px-025 my-py-05 my-ml-1 fas fa-user-circle" style="font-size: 1.875rem;line-height: 2rem;"></i></label>
+          <label for="login-dropdown"><i class="my-px-025 my-py-05 my-ml-1 fas fa-user-circle"
+              style="font-size: 1.875rem;line-height: 2rem;"></i></label>
           <div class="my-loginbtn px-2 py-2 bg-white rounded">
-          <a href="./login.html"><button  type="button" class=" my-nav-btn m-0 w-100 text-left btn">Login</button></a>
-</div>
+            <a href="./login.html"><button type="button" class=" my-nav-btn m-0 w-100 text-left btn">Login</button></a>
+          </div>
 
 
         </div>
@@ -66,15 +70,15 @@
     <!-- Swiper -->
     <div class="swiper-container mySwiper">
       <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="./img/bgc.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="./img/bgc2.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="./img/bgc3.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./img/bgc.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./img/bgc2.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./img/bgc3.jpg" alt=""></div>
 
       </div>
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
       <div class="swiper-pagination"></div>
-  </div>
+    </div>
 
 
     <section class="section1">
@@ -83,7 +87,8 @@
         <div class="my-mb-5">
           <div class="my-textarea text-center mx-auto">
             <h2 class="mb-3 font-weight-normal my-title-h2">Raw Denim Heirloom Man Braid</h2>
-            <p class="my-width mx-auto mb-0 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+            <p class="my-width mx-auto mb-0 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Officiis
               architecto
               ad ducimus aperiam quia illo atque animi odit quis pariatur autem eaque, suscipit repudiandae expedita.
               Aspernatur iure excepturi tempore autem!</p>
@@ -840,18 +845,33 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
     integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
     crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-          navigation: {
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
 
-          }, pagination: {
-              el: ".swiper-pagination",
-          },
-      });
+      }, pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+    const menu_btn = document.querySelector('.navbar-toggler.my-orderreset')
+    const menu = document.querySelector('.navbar-collapse')
 
+    toggleBtn()
+    function toggleBtn() {
+
+      if (menu.classList.contains('show')) {
+
+        menu_btn.innerHTML = `<i class="fas fa-bars"></i>`
+      } else {
+
+        menu_btn.innerHTML = ` <i class="fas fa-times"></i>`
+      }
+
+    }
+    menu_btn.addEventListener('click', toggleBtn)
   </script>
 </body>
 

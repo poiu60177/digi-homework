@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-   
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
@@ -23,13 +23,16 @@
             </div>
             <button class="navbar-toggler my-orderreset" type="button" data-toggle="collapse"
                 data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                aria-label="Toggle navigation" style="padding: 1rem;">
+
+                <i class="fas fa-bars"></i>
+
 
             </button>
 
             <div data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
-                class="navbar-collapse my-padding my-height justify-content-end" id="navbarNavDropdown"  style="transition: none;">
+                class="navbar-collapse my-padding my-height justify-content-end" id="navbarNavDropdown"
+                style="transition: none;">
                 <ul class="navbar-nav  ">
                     <li class="nav-item active">
                         <a href=""><button type="button" class=" my-nav-btn btn ">Blog</button></a>
@@ -375,7 +378,7 @@
                                         class="plus"
                                         style="border: none;background-color: transparent;width: unset;padding: unset;"><span
                                             class="font-weight-bold">+</span> </button> </div>
-                                <div class="pr-8 "> <span class="item-cost text-xs font-medium">$${items.item_cost}</span> </div>
+                                <div class="pr-8 " style="min-width:2rem;"> <span class="item-cost text-xs font-medium" >$${items.item_cost}</span> </div>
                                 <div> <i class="fa fa-close text-xs font-medium"></i> </div>
                             </div>
                         </div>`
@@ -383,6 +386,7 @@
     const plus_btns = document.querySelectorAll('.plus')
     const minus_btns = document.querySelectorAll('.minus')
     const number_count = document.querySelectorAll('.number_count')
+    const items_cost = document.querySelectorAll('.item-cost')
     const total_number = document.querySelector('#total-number')
     const product_price = document.querySelector('#product-price')
     const traffic_fee = document.querySelector('#traffic-fee')
@@ -408,8 +412,9 @@
 
             number_count[i].value = parseInt(number_count[i].value) + 1
             console.log(number_count[i].value);
-            sumUp()
 
+            sumUp()
+            items_cost[i].innerHTML = '$' + item_list[i].item_cost * parseInt(number_count[i].value);
         }
 
     }
@@ -422,14 +427,16 @@
             else {
                 number_count[i].value = parseInt(number_count[i].value) - 1
                 sumUp()
-
+                items_cost[i].innerHTML = '$' + item_list[i].item_cost * parseInt(number_count[i].value);
             }
         }
 
     }
 
     function sumUp() {
+
         let sum = 0;
+
         for (let i = 0; i < number_count.length; i++) {
             if (parseInt(number_count[i].value) < 0 || number_count[i].value == '' || number_count[i].value.includes('.')) {
 
@@ -441,6 +448,7 @@
             sum += parseInt(number_count[i].value);
 
             total_number.innerHTML = sum
+
         }
         let price_sum = 0;
 
@@ -470,7 +478,9 @@
 
 
 </script>
+<script src="./js/template.js">
 
+</script>
 
 
 
