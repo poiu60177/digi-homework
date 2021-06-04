@@ -438,9 +438,9 @@
         let sum = 0;
 
         for (let i = 0; i < number_count.length; i++) {
-            if (parseInt(number_count[i].value) < 0 || number_count[i].value == '' || number_count[i].value.includes('.')) {
+            if (parseInt(number_count[i].value) < 1 || number_count[i].value == '' || number_count[i].value.includes('.')) {
 
-                number_count[i].value = 0
+                number_count[i].value = 1
                 sumUp
 
 
